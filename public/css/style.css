@@ -1,0 +1,70 @@
+body{
+    background-color: beige;
+}
+
+#search{
+    width: 85%;
+}
+
+#butt{
+    width: 14%;
+    margin-left:5px;
+}
+
+.st{
+    float: left;
+}
+
+.box{
+    width: 95%;
+    border: 2px solid rgb(15, 163, 189);
+    height: 500px;
+    margin: auto;
+    overflow: scroll;
+    padding: 5px;
+}
+
+nav{
+    width: 100%;
+}
+
+.nav{
+    float:left;
+    padding: 8px;
+}
+.main{
+    margin: auto;
+    margin-top: 80px;
+}
+.fm{
+    background-color: beige;
+}
+.r{
+    width: 150px;
+    background-color: black;
+    border: 2px solid black;
+    color: Red;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.stands{
+    float: left;
+}
+.stats{
+    background-color: gold;
+    width: 66.6%;
+    /* padding: 5px; */
+    text-align: center;
+    color: black;
+}
+.scores{
+    background-color: black;
+    width: 33.3%;
+    text-align: center;
+    color: white;
+}
+.lab{
+    width: 40%;
+    font-size: 150%;
+}
