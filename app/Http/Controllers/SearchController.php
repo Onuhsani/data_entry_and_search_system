@@ -16,11 +16,18 @@ class SearchController extends Controller
 
 
     public function search(Request $request){
-        $search = $request->input('search');
-    
-        $records = Data::query()->where('stats', 'LIKE', "%{$search}%")->get();
+        $search = strval($request->input('search'));
 
-        // return redirect()->back()->with(compact('records'));
+        $searcharray = explode(" ", $search);
+
+        // dd($searcharray);
+        $records = Data::query();
+        $len = count($searcharray);
+        $records = $records->where('stats', 'LIKE', isset($searcharray[0]) ? "%{$searcharray[0]}%" : null)->
+                            where('stats', 'LIKE', isset($searcharray[1]) ? "%{$searcharray[1]}%" : null)->
+                            where('stats', 'LIKE', isset($searcharray[2]) ? "%{$searcharray[2]}%" : null)->
+                            where('stats', 'LIKE', isset($searcharray[3]) ? "%{$searcharray[3]}%" : null)->get();
+
         return view('user.search-result', compact('records'));
     }
 
