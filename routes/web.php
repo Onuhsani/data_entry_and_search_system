@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Data;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $records = Data::all();
+    return view('welcome', compact('records'));
 });
 
 Route::get('/dashboard', function () {

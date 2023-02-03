@@ -19,7 +19,7 @@
 
         </div>
         <div class="col-lg-6 mt-3">
-                <h1>LINUS GENIUS</h1>
+                <center><h1 class="text-primary"> Enter record on <span class="text-warning">Genius</span></h1></center>
                 <div class="form">
                     <form action="{{ route('record.store') }}" class="form" method="post" enctype="multipart/form-data" file="true">
                         @csrf
@@ -42,11 +42,11 @@
                             <input type="text" class="form-control" id="ga2" name="ga2" placeholder="Enter the against for team 2" value="{{ old('ga2') }}"/>
                         </div>
                         <div class="form">
-                            <h5 class="mt-3"><label for="score1" id="score1-label">Score1</label></h5>
+                            <h5 class="mt-3 text-primary"><label for="score1" id="score1-label">Score1</label></h5>
                             <input type="text" class="form-control" id="score1" name="score1" placeholder="Enter team 1 score" value="{{ old('score1') }}"/>
                         </div>
                         <div class="form">
-                            <h5 class="mt-3"><label for="score2" id="score2-label">Score2</label></h5>
+                            <h5 class="mt-3 text-primary"><label for="score2" id="score2-label">Score2</label></h5>
                             <input type="text" class="form-control" id="score2" name="score2" placeholder="Enter team 2 score" value="{{ old('score2') }}"/>
                         </div>
                         <div class="form mt-4">

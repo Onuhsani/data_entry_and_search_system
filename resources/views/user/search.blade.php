@@ -15,7 +15,7 @@
 </div>
     <section class="sec main">
         <div class="row mt-5">
-            <h1 class="text-center text-danger">Search <span class="text-info"> Genius</span></h1>
+            <h1 class="text-center text-primary">Search <span class="text-warning"> Genius</span></h1>
         </div>
         <div class="row mt-2">
             <div class="col-md-3"></div>
