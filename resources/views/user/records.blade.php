@@ -8,6 +8,7 @@
                 <ul>
                     <li class="nav"><a href="{{ route('record.create') }}"><strong>Add data</strong></a></li>
                     <li class="nav"><a href="{{ route('record.searchPage') }}"><strong>Search</strong></a></li>
+                    <li class="nav"><strong>{{ $count }}</strong></a></li>
                 </ul>
             </nav>
         </section>

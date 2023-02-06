@@ -12,12 +12,14 @@ class RecordController extends Controller
     public function index()
     {
         $records = Data::all();
-        return view('user.records', compact('records'));
+        $count = count($records);
+        return view('user.records', compact('records', 'count'));
     }
 
     public function create()
     {
-        return view('user.create-record');
+        $count = count(Data::all());
+        return view('user.create-record', compact('count'));
     }
 
 
