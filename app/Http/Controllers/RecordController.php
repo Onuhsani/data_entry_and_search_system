@@ -6,6 +6,7 @@ use App\Models\Record;
 use App\Http\Requests\StoreRecordRequest;
 use App\Http\Requests\UpdateRecordRequest;
 use App\Models\Data;
+use App\Models\StudyData;
 
 class RecordController extends Controller
 {
@@ -60,6 +61,27 @@ class RecordController extends Controller
     public function edit(Record $record)
     {
         //
+    }
+
+    public function transferRecords()
+    {
+        $points = Data::all();
+        ini_set('max_execution_time', 300);
+
+        foreach($points as $point){
+            $stands = explode(" ", $point->stats);
+            StudyData::create([
+                'gft1' => $stands[0],
+                'gat1' => $stands[1],
+                'gft2' => $stands[2],
+                'gat2' => $stands[3],
+                'score1' => $point->t1_score,
+                'score2' => $point->t2_score,
+            ]);
+
+        }
+
+        return redirect()->back()->with('success', 'All records transffered successfully');
     }
 
     /**

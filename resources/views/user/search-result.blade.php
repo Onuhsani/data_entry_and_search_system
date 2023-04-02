@@ -29,10 +29,10 @@
                             </div>
                             <div class="scores stands">
                                 <div class="ph1">
-                                   <h4> {{ $record->t1_score }} </h4>
+                                   <label style="font-size:100%;"> {{ $record->t1_score }} </label>
                                 </div>
                                 <div class="ph2">
-                                   <h4> {{ $record->t2_score }} </h4>
+                                   <label style="font-size:100%;"> {{ $record->t2_score }} </label>
                                 </div> 
                             </div>
                         </div>

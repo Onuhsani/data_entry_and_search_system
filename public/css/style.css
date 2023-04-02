@@ -40,7 +40,7 @@ nav{
     background-color: beige;
 }
 .r{
-    width: 150px;
+    width: 80px;
     background-color: black;
     border: 2px solid black;
     color: Red;
@@ -57,13 +57,19 @@ nav{
     /* padding: 5px; */
     text-align: center;
     color: black;
+    font-size: 70%;
 }
 .scores{
     background-color: black;
     width: 33.3%;
     text-align: center;
-    color: white;
+    color: red;
 }
+
+.scores label{
+    font-size: 70%;
+}
+
 .lab{
     width: 40%;
     font-size: 150%;

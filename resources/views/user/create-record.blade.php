@@ -8,7 +8,7 @@
                 <ul>
                     <li class="nav"><a href="{{ route('record.searchPage') }}"><strong>Search records</strong></a></li>
                     <li class="nav"><a href="{{ route('record.index') }}"><strong>Home</strong></a></li>
-                    <li class="nav">Total records: &<strong>{{ $count }}</strong></a></li>
+                    <li class="nav">Total records: &nbsp;<strong>{{ $count }}</strong></a></li>
                 </ul>
             </nav>
         </section>
